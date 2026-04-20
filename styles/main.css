@@ -16,7 +16,8 @@ h1 {
   font-weight: 600;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 600;
 }
 
@@ -44,7 +45,7 @@ header {
 }
 
 #js-triggers > li > a {
-  color: #40E0D0; /* Seafoam blue/turquoise */
+  color: #40e0d0; /* Seafoam blue/turquoise */
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
@@ -52,5 +53,5 @@ header {
 
 #js-triggers > li > a:hover {
   text-decoration: none;
-  color: #20B2AA; /* Slightly darker seafoam blue when hovered on */
+  color: #20b2aa; /* Slightly darker seafoam blue when hovered on */
 }
