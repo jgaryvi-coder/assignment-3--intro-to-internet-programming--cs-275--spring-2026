@@ -34,3 +34,23 @@ header {
   align-items: center;
   padding: 0 30px;
 }
+
+#js-triggers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+#js-triggers > li > a {
+  color: #40E0D0; /* Seafoam blue/turquoise */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#js-triggers > li > a:hover {
+  text-decoration: none;
+  color: #20B2AA; /* Slightly darker seafoam blue when hovered on */
+}
