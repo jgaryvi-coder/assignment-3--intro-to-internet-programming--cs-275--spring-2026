@@ -30,13 +30,19 @@ let closeModal = (event) => {
 };
 
 let handleResize = () => {
-    let currentIsDesktop = window.innerWidth >= breakpoint;
+   let currentIsDesktop = window.innerWidth >= breakpoint;
 
     if (currentIsDesktop !== isDesktop) {
+        navMenu.style.transition = `none`;
+
         navMenu.classList.remove(`is-dropdown-active`);
         navMenu.classList.remove(`is-tray-active`);
         modalPanel.classList.remove(`is-active`);
         isDesktop = currentIsDesktop;
+
+        setTimeout(() => {
+            navMenu.style.transition = ``;
+        }, 50);
     }
 };
 
