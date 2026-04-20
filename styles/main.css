@@ -55,3 +55,74 @@ header {
   text-decoration: none;
   color: #20b2aa; /* Slightly darker seafoam blue when hovered on */
 }
+
+nav {
+  background-color: #f39c12; /* Orange */
+  z-index: 5;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav > ul > li > a:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+nav ul ul {
+  display: none;
+}
+
+@media (min-width: 736px) {
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 500ms ease;
+  }
+
+  nav.is-dropdown-active {
+    transform: translateY(0);
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 735px) {
+  nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 80px);
+    transform: translateX(-100%);
+    transition: transform 500ms ease;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .2);
+  }
+
+  nav.is-tray-active {
+    transform: translateX(0);
+  }
+
+  nav > ul > li {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  }
+}
