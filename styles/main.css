@@ -96,7 +96,7 @@ nav ul ul {
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
   }
 
-  nav.is-dropdown-active {
+  .is-dropdown-active {
     transform: translate(-50%, 0);
   }
 
@@ -127,7 +127,7 @@ nav ul ul {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
   }
 
-  nav.is-tray-active {
+  .is-tray-active {
     transform: translateX(0);
   }
 
