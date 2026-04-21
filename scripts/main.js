@@ -30,7 +30,7 @@ let closeModal = (event) => {
 };
 
 let handleResize = () => {
-   let currentIsDesktop = window.innerWidth >= breakpoint;
+    let currentIsDesktop = window.innerWidth >= breakpoint;
 
     if (currentIsDesktop !== isDesktop) {
         navMenu.style.transition = `none`;
