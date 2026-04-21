@@ -90,15 +90,14 @@ nav ul ul {
     position: absolute;
     top: 80px;
     left: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%, -100%);
     transition: transform 500ms ease;
     width: max-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
-
   }
 
   nav.is-dropdown-active {
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
   }
 
   nav > ul {
@@ -113,7 +112,7 @@ nav ul ul {
 
   nav > ul > li:last-child {
     border-right: none;
-}
+  }
 }
 
 @media (max-width: 735px) {
@@ -173,6 +172,6 @@ nav ul ul {
   width: 60%;
   height: 60%;
   border-radius: 8px;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, .5);
   cursor: auto;
 }
